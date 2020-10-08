@@ -1,6 +1,4 @@
-# cmpt-474 VolunTutor
-
-CMPT 474 Main Project
+#VolunTutor
 
 Project Title: VolunTutor
 Description: A web system which allows users to sign up to tutor others and to 
