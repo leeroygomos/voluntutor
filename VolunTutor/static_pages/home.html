@@ -1,0 +1,36 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+
+<style>
+    .bg-img { 
+        background-image: url({% static 'home_hero.png' %}) ;
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
+        background-color: #999;
+
+    }
+</style>
+
+<section class="hero is-primary is-medium bg-img">
+
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Level Up Your Knowledge
+        </h1>
+        <h2 class="subtitle">
+           Build a better future through the power of knowledge
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}

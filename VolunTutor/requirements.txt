@@ -1,0 +1,6 @@
+Django==3.0.4
+django-crispy-forms==1.8.1
+django-storages==1.9.1
+psycopg2==2.8.4
+boto3==1.12.25
+redis==3.4.1

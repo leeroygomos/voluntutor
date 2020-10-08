@@ -1,0 +1,29 @@
+<!-- templates/search.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="section">
+
+		<h1 class="title">Search Page</h1>
+
+		<form method="get" action = "">
+			<button type="submit" style= "float: right"> Search </button>
+			<input id="search" name="search" type= "text" name="q" placeholder="Search..." style="float:right">
+		<form>
+		<br><br>
+
+		{% for user in Users %}
+				<p> Username: {{ user.user}} </p>
+				<p> First name: {{ user.first_name}} </p>
+				<p> Last name: {{ user.last_name}} </p>
+				<p> Program: {{ user.study}} </p>
+				<p> Degree: {{ user.degree}} </p>
+				<p> School: {{ user.school}} </p>
+
+				<hr>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

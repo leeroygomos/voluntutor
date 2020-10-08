@@ -1,0 +1,16 @@
+<!-- templates/register.html -->
+
+{% extends "base.html" %}
+
+{% block title %}Create an Account{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+	<form method="POST">
+		{% csrf_token %}
+		<button type="submit" class="btn btn-success">Delete Account</button>
+	</form>
+{% endblock content%}
+
+
+
